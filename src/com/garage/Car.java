@@ -1,0 +1,40 @@
+package com.garage;
+
+class Car extends Vehicle {
+	private String name;
+	private int mile;
+	private String honk = "hunk";
+
+	public int getMile() {
+		return mile;
+	}
+
+	public void setMile(int mile) {
+		this.mile = mile;
+	}
+
+	public String getHonk() {
+		return honk;
+	}
+
+	public void setHonk(String honk) {
+		this.honk = honk;
+	}
+
+	public String setName(String name) {
+		return this.name = name;
+	}
+
+	String getParts() {
+		return "Car-parts";
+	}
+
+	String getType() {
+		return "Car";
+	}
+
+	String getName() {
+		return name;
+	}
+
+}
