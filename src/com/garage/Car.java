@@ -1,6 +1,12 @@
 package com.garage;
 
 class Car extends Vehicle {
+	public Car(int value, String name) {
+		super(value);
+		this.name = name;
+		// TODO Auto-generated constructor stub
+	}
+
 	private String name;
 	private int mile;
 	private String honk = "hunk";
@@ -35,6 +41,11 @@ class Car extends Vehicle {
 
 	String getName() {
 		return name;
+	}
+
+	@Override
+	public String toString() {
+		return "Car [name = " + name + ", value = " + value + "]";
 	}
 
 }
