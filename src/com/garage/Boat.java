@@ -1,6 +1,11 @@
 package com.garage;
 
 public class Boat extends Vehicle {
+	public Boat(int value) {
+		super(value);
+		this.value = value * 2;
+	}
+
 	private String name;
 
 	@Override
@@ -22,6 +27,11 @@ public class Boat extends Vehicle {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return "Boat [name=" + name + ", value=" + value + "]";
 	}
 
 }

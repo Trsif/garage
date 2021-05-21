@@ -3,17 +3,21 @@ package com.garage;
 public class Runner {
 
 	public static void main(String[] args) {
+
+		Car c = new Car(1);
+		Boat b = new Boat(4);
+		Moto m = new Moto(3);
 		Garage garage = new Garage();
-		Car c = new Car();
-		Boat b = new Boat();
-		Moto m = new Moto();
-		garage.addVehicle();
+		vehiclasIn(garage, c, b, m);
+		System.out.println(garage);
 		c.setName("Fahira");
-		b.setName("BoatTrue");
-		garage.addVehicle(c, b, m);
+		b.setName("True-Boat");
 		System.out.println(b.getName());
-		garage.vehicles();
 
 	}
 
+	public static void vehiclasIn(Garage garage, Vehicle... t) {
+		garage.addVehical(t);
+
+	}
 }

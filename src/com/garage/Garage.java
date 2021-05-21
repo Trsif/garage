@@ -2,9 +2,17 @@ package com.garage;
 
 import java.util.ArrayList;
 
-public class Garage extends Vehicle {
+public class Garage {
 	private String name;
-	private ArrayList<Vehicle> vehicles = new ArrayList<Vehicle>();
+	private ArrayList<Vehicle> vehicles = new ArrayList<>();
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
 
 	public ArrayList<Vehicle> getVehicles() {
 		return vehicles;
@@ -14,33 +22,23 @@ public class Garage extends Vehicle {
 		this.vehicles = vehicles;
 	}
 
-	public void addVehicle(Vehicle... vehicle) {
+	public void addVehical(Vehicle... vehicle) {
 		for (Vehicle i : vehicle) {
 			vehicles.add(i);
 		}
-
 	}
 
-	public void vehicles() {
-
+	public int calculate_Bill() {
 		for (int i = 0; i < vehicles.size(); i++) {
-			System.out.print(vehicles.get(i).toString());
+
 		}
+		return 0;
+
 	}
 
-	String getType() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	String getName() {
-		// TODO Auto-generated method stub
-		return name;
-	}
-
-	String getParts() {
-		// TODO Auto-generated method stub
-		return null;
+	@Override
+	public String toString() {
+		return "  vehicles=" + vehicles;
 	}
 
 }
