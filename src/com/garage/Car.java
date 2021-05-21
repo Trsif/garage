@@ -1,8 +1,9 @@
 package com.garage;
 
 class Car extends Vehicle {
-	public Car(int value) {
+	public Car(int value, String name) {
 		super(value);
+		this.name = name;
 		// TODO Auto-generated constructor stub
 	}
 
@@ -44,7 +45,7 @@ class Car extends Vehicle {
 
 	@Override
 	public String toString() {
-		return "Car [name=" + name + ", value=" + value + "]";
+		return "Car [name = " + name + ", value = " + value + "]";
 	}
 
 }

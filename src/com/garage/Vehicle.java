@@ -14,7 +14,7 @@ abstract class Vehicle {
 		this.value = value;
 	}
 
-	public int getValue() {
+	public int getValue(int j) {
 		return value;
 	}
 

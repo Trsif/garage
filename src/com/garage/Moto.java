@@ -1,9 +1,10 @@
 package com.garage;
 
 public class Moto extends Vehicle {
-	public Moto(int value) {
+	public Moto(int value, String name) {
 		super(value);
-		// TODO Auto-generated constructor stub
+		this.name = name;
+
 	}
 
 	private String name;
@@ -37,7 +38,7 @@ public class Moto extends Vehicle {
 
 	@Override
 	public String toString() {
-		return "Moto [name=" + name + ", value=" + value + "]";
+		return "Moto [name=" + name + ", value = " + value + "]";
 	}
 
 }

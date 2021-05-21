@@ -1,9 +1,10 @@
 package com.garage;
 
 public class Boat extends Vehicle {
-	public Boat(int value) {
+	public Boat(int value, String name) {
 		super(value);
 		this.value = value * 2;
+		this.name = name;
 	}
 
 	private String name;
@@ -31,7 +32,7 @@ public class Boat extends Vehicle {
 
 	@Override
 	public String toString() {
-		return "Boat [name=" + name + ", value=" + value + "]";
+		return "Boat [name = " + name + ", value = " + value + "]";
 	}
 
 }
